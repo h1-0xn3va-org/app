@@ -13,5 +13,4 @@ jobs:
           path: ~/cache
           key: cache_key
       - run: |
-          pwd
-          ls -la
+          cat ~/cache
