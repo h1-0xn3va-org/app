@@ -4,6 +4,7 @@ on: workflow_dispatch
 
 jobs:
   cache:
+    environment: production
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -11,3 +12,4 @@ jobs:
         with:
           path: ~/cache
           key: cache_key
+      - run: cat cache
